@@ -1,18 +1,62 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const customStyles = {
     marginTop: "3%",
     marginLeft: "auto",
     gap: "5px",
   };
+
+  const closeNavbar = () => {
+    const navbarToggler = document.getElementById("navbarNavDropdown");
+    if (navbarToggler) {
+      navbarToggler.classList.remove("show");
+    }
+  };
+
+  const handleNavigation = (section) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+    }
+    setTimeout(() => {
+      document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+    }, 0);
+    closeNavbar();
+  };
+
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#/">
-          J. Eyken WebDev
-        </a>
+        <div>
+          <ul
+            id="nav-brand"
+            className="navbar-nav"
+            style={{ marginTop: "20%", gap: "5px" }}
+          >
+            <li>
+              <ScrollLink
+                className="nav-link active"
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={100}
+                delay={0}
+                isDynamic={true}
+                onClick={() => handleNavigation("section1")}
+              >
+                JEyken.Dev
+              </ScrollLink>
+            </li>
+          </ul>
+        </div>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -27,67 +71,71 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav" style={customStyles}>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link active"
                 activeClass="active"
                 to="section1"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-60}
                 duration={100}
                 delay={0}
                 isDynamic={true}
+                onClick={() => handleNavigation("section1")}
               >
-                &nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;
-              </Link>
+                &nbsp;&nbsp;// Home&nbsp;&nbsp;
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link active"
                 activeClass="active"
                 to="section2"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={100}
                 delay={0}
                 isDynamic={true}
+                onClick={() => handleNavigation("section2")}
               >
-                &nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;
-              </Link>
+                &nbsp;&nbsp;// About&nbsp;&nbsp;
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link active"
                 activeClass="active"
                 to="section3"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-100}
                 duration={100}
                 delay={0}
                 isDynamic={true}
+                onClick={() => handleNavigation("section3")}
               >
-                &nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;
-              </Link>
+                &nbsp;&nbsp;// Projects&nbsp;&nbsp;
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link active"
                 activeClass="active"
                 to="section4"
                 spy={true}
                 smooth={true}
-                offset={50}
-                duration={100}
+                offset={-50}
+                duration={50}
                 delay={0}
                 isDynamic={true}
+                onClick={() => handleNavigation("section4")}
               >
-                &nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;
-              </Link>
+                &nbsp;&nbsp;// CV&nbsp;&nbsp;
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link active"
                 activeClass="active"
                 to="section5"
@@ -97,9 +145,10 @@ const Navbar = () => {
                 duration={100}
                 delay={0}
                 isDynamic={true}
+                onClick={() => handleNavigation("section5")}
               >
-                &nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;
-              </Link>
+                &nbsp;&nbsp;// Contact&nbsp;&nbsp;
+              </ScrollLink>
             </li>
           </ul>
         </div>
