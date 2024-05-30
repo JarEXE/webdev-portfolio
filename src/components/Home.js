@@ -6,11 +6,6 @@ import { Link } from "react-scroll";
 const Home = ({ id, className }) => {
   React.useEffect(() => {
     const wavyElements = document.querySelectorAll(".tech-icons > p");
-    const link = document.createElement("link");
-    link.rel = "preload";
-    link.href = "../images/jeyken.jpg";
-    link.as = "image";
-    document.head.appendChild(link);
 
     const applyWavyClassWithDelay = (index) => {
       setTimeout(() => {
@@ -21,10 +16,6 @@ const Home = ({ id, className }) => {
     for (let i = 0; i < wavyElements.length; i++) {
       applyWavyClassWithDelay(i);
     }
-
-    return () => {
-      document.head.removeChild(link);
-    };
   }, []);
 
   return (
