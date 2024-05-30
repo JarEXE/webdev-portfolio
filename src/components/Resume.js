@@ -81,7 +81,10 @@ const Resume = ({ id, className }) => {
         <h2>// CV</h2>
       </div>
       <div className="pdf-container">
-        <Document file="/pubCV.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Document
+          file={{ url: "/pubCV.pdf" }}
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
           <Page width={calculatedWidth} pageNumber={pageNumber} />
         </Document>
       </div>
