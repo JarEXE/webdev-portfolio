@@ -82,7 +82,7 @@ const Resume = ({ id, className }) => {
       </div>
       <div className="pdf-container">
         <Document
-          file={{ url: "/pubCV.pdf" }}
+          file={{ url: "https://jeyken-portfolio.netlify.app/pubCV.pdf" }}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page width={calculatedWidth} pageNumber={pageNumber} />
