@@ -7,7 +7,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const customStyles = {
-    marginTop: "3%",
+    marginTop: "0.5%",
     marginLeft: "auto",
     gap: "5px",
   };
@@ -30,13 +30,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <div>
           <ul
             id="nav-brand"
             className="navbar-nav"
-            style={{ marginTop: "20%", gap: "5px" }}
+            style={{ marginTop: "14%", gap: "5px" }}
           >
             <li>
               <ScrollLink
