@@ -17,7 +17,7 @@ const Projects = ({ id, className }) => {
         const windowHeight = window.innerHeight;
 
         const isSectionVisible =
-          scrollPosition >= sectionTop - windowHeight + sectionHeight / 4;
+          scrollPosition >= sectionTop - windowHeight + sectionHeight / 8;
 
         if (isSectionVisible) {
           setIsVisible(true);
