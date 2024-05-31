@@ -93,7 +93,7 @@ const Navbar = () => {
                 to="section2"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-30}
                 duration={100}
                 delay={0}
                 isDynamic={true}
@@ -125,7 +125,7 @@ const Navbar = () => {
                 to="section4"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-80}
                 duration={50}
                 delay={0}
                 isDynamic={true}

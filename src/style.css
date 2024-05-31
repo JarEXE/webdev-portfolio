@@ -2,11 +2,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 150%;
-  max-width: 1080px;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
   color: #1f2937;
+  max-width: 1080px;
 }
 
 /* ANIMATIONS */
@@ -116,6 +116,10 @@ body {
   animation: animated-mouse 1.2s ease infinite;
 }
 
+#tsparticles {
+  z-index: -500;
+}
+
 @keyframes animated-mouse {
   0% {
     opacity: 1;
@@ -195,11 +199,11 @@ ul li {
 
 .project-details-container {
   line-height: 150%;
-  max-width: 1080px;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 15%;
+  position: relative;
 }
 
 .project-details-container h3 {
@@ -242,7 +246,7 @@ ul li {
 .navbar {
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   left: 0;
   top: 0;
@@ -265,18 +269,17 @@ ul li {
 }
 
 .section1 {
-  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1080px;
+  min-height: 85vh;
 }
 .section2 {
   margin-top: 5%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .section2-about {
@@ -294,6 +297,7 @@ ul li {
 
 .section3 {
   margin-top: 5%;
+  min-height: 800px;
 }
 
 #section3-container {
@@ -317,13 +321,13 @@ ul li {
 }
 
 .section4 {
-  margin-top: 5%;
-  height: 100vh;
+  margin-top: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0;
+  min-height: 650px;
 }
 
 .pdf-container {
@@ -349,8 +353,9 @@ ul li {
 
 .section5 {
   margin-top: 5%;
-  height: 100vh;
+  min-height: 800px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   opacity: 0;
@@ -549,7 +554,6 @@ h2 {
 
   .section5 {
     margin-top: 5%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
