@@ -16,7 +16,7 @@ export default function AnilookupDetails() {
 
   return (
     <div className="project-details-container">
-      <h2>GameWarp</h2>
+      <h2>Game Warp</h2>
       <a
         className="mb-4"
         href="https://github.com/JarEXE/gamewarp"
@@ -27,7 +27,7 @@ export default function AnilookupDetails() {
       </a>
       <h3>Description</h3>
       <p>
-        Gamewarp is a React web application that offers a simple demo of a video
+        Game Warp is a React web application that offers a simple demo of a video
         game webshop. It makes use of Redux and Redux Thunk for state
         management.
         <br></br>
@@ -41,8 +41,8 @@ export default function AnilookupDetails() {
       </p>
       <p>
         <strong>Demo: </strong>
-        <a href="https://gamewarp.netlify.app" target="_blank" rel="noreferrer">
-          https://gamewarp.netlify.app
+        <a href="https://.netlify.app" target="_blank" rel="noreferrer">
+          https://.netlify.app
         </a>
       </p>
       <h3>Features</h3>
@@ -62,10 +62,10 @@ export default function AnilookupDetails() {
       </ul>
       <h3>Screenshots</h3>
       <div className="screenshots-container">
-        <img src={gamewarplanding} alt="gamewarp landing page" />
-        <img src={gamewarpcatalogue} alt="gamewarp catalogue" />
-        <img src={gamewarpcart} alt="gamewarp cart" />
-        <img src={gamewarporder} alt="gamewarp order" />
+        <img src={landing} alt=" landing page" />
+        <img src={catalogue} alt=" catalogue" />
+        <img src={cart} alt=" cart" />
+        <img src={order} alt="gamewarp order" />
       </div>
     </div>
   );
