@@ -56,7 +56,7 @@ const Projects = ({ id, className }) => {
           navRoute="/projects/smartforms"
         />
         <ProjectCard
-          projectName="// Gamewarp"
+          projectName="// Game Warp"
           image={gamewarpdevices}
           tech={["React", "Redux", "Redux-Thunk", "Tailwind CSS", "REST API"]}
           navRoute="/projects/gamewarp"
