@@ -41,8 +41,8 @@ export default function AnilookupDetails() {
       </p>
       <p>
         <strong>Demo: </strong>
-        <a href="https://.netlify.app" target="_blank" rel="noreferrer">
-          https://.netlify.app
+        <a href="https://gamewarp.netlify.app" target="_blank" rel="noreferrer">
+          https://gamewarp.netlify.app
         </a>
       </p>
       <h3>Features</h3>
@@ -62,10 +62,10 @@ export default function AnilookupDetails() {
       </ul>
       <h3>Screenshots</h3>
       <div className="screenshots-container">
-        <img src={landing} alt=" landing page" />
-        <img src={catalogue} alt=" catalogue" />
-        <img src={cart} alt=" cart" />
-        <img src={order} alt="gamewarp order" />
+        <img src={gamewarplanding} alt=" landing page" />
+        <img src={gamewarpcatalogue} alt=" catalogue" />
+        <img src={gamewarpcart} alt=" cart" />
+        <img src={gamewarporder} alt="gamewarp order" />
       </div>
     </div>
   );
