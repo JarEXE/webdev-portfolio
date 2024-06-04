@@ -43,7 +43,6 @@ export default function SmartFormsDetails() {
       </p>
       <h3>Features</h3>
       <ul>
-        <li>SQL Database</li>
         <li>User registration and management</li>
         <li>User roles</li>
         <li>Single Sign-On via Authentik</li>
