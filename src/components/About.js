@@ -49,8 +49,9 @@ const About = ({ id, className }) => {
             <br></br>
             <br></br>
             When not busy typing code, I am most likely partaking in some sort
-            of gym activity, game dev practice, or watching lengthy video essays
-            about video games I will probably never play.
+            of gym activity, game dev practice, keeping up with latest tech
+            trends or tech news, or watching lengthy video essays about video
+            games I will probably never play.
             <br></br>
             <br></br>
             My main tech stack is the MERN stack, though I have dabbled in some
