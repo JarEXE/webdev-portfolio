@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import smartformsleavecalendar from "../images/smartformsleavecalendar.png";
 import anilookupdevices from "../images/devices-removebg.png";
 import gamewarpdevices from "../images/gamewarpdevices-removebg.png";
+import printanywheredevices from "../images/printanywhere/printanywheredevices.png";
 
 const Projects = ({ id, className }) => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -36,6 +37,12 @@ const Projects = ({ id, className }) => {
         id="section3-container"
         className={`${isVisible ? "fade-in-bottom" : ""}`}
       >
+        <ProjectCard
+          projectName={"// Print-Anywhere"}
+          image={printanywheredevices}
+          tech={["Sveltekit", "Tailwind CSS", "SQL", "Node JS"]}
+          navRoute="/projects/print-anywhere"
+        />
         <ProjectCard
           projectName="// AniLookup"
           image={anilookupdevices}

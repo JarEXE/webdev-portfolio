@@ -33,9 +33,9 @@ export default function SmartFormsDetails() {
         and overviews.
         <br></br>
         <br></br>
-        Additionally, this project makes use of Single Sign-On so that employees
-        and users would only need to login once in order to access all
-        company-specific websites and services.
+        This project makes use of Single Sign-On so that employees and users
+        would only need to login once in order to access all company-specific
+        websites and services.
       </p>
       <p>
         <strong>Demo: </strong>
@@ -59,7 +59,6 @@ export default function SmartFormsDetails() {
         <li>PDF viewer via ViewerJS</li>
       </ul>
       <h3>Screenshots*</h3>
-      <i>*Some sensitive information has been redacted</i>
       <div className="screenshots-container">
         <img src={smartformsleavecalendar} alt="smartforms leave calendar" />
         <img src={smartformsleaveform} alt="smartformss leave form" />

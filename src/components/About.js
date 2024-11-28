@@ -54,8 +54,8 @@ const About = ({ id, className }) => {
             games I will probably never play.
             <br></br>
             <br></br>
-            My main tech stack is the MERN stack, though I have dabbled in some
-            PHP, Java (Android Studio), and C in the past. I am a fast learner
+            My main tech stack is the MERN stack, though I also have experience
+            working with PHP, Java (Android Studio), and C. I am a fast learner
             who is capable of easily adapting to new environments, languages,
             and I'm always up for a good challenge.
             <br></br>

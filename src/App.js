@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import PrintAnywhereDetails from "./components/PrintAnywhereDetails";
 import AnilookupDetails from "./components/AniLookupDetails";
 import GameWarpDetails from "./components/GameWarpDetails";
 import ScrollToTopButton from "./components/ScrollToTopButton";
@@ -30,6 +31,14 @@ function App() {
                   <Resume id="section4" className="section4" />
                   <Contact id="section5" className="section5" />
                   <ScrollToTopButton />
+                </>
+              }
+            />
+            <Route
+              path="/projects/print-anywhere"
+              element={
+                <>
+                  <PrintAnywhereDetails /> <ScrollToTopButton />
                 </>
               }
             />
