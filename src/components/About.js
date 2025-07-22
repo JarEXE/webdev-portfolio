@@ -47,11 +47,10 @@ const About = ({ id, className }) => {
             creating clean, user-friendly, and responsive websites and web
             applications.
             <br></br>
-            <br></br>
-            My main tech stack is the MERN stack, though I also have experience
-            working with Wordpress, PHP, Java, and C. I am a fast learner who is
-            capable of easily adapting to new environments, languages, and I'm
-            always up for a good challenge.
+            <br></br>I currently enjoy using Sveltekit as my main development
+            framework, but I have experience with other tech stacks and
+            libraries. I am a fast learner who is capable of easily adapting to
+            new environments, languages, and I'm always up for a good challenge.
             <br></br>
             <br></br>
             When not busy typing code, I am most likely partaking in some sort
