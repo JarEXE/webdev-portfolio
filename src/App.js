@@ -10,8 +10,11 @@ import AnilookupDetails from "./components/AniLookupDetails";
 import GameWarpDetails from "./components/GameWarpDetails";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import SmartFormsDetails from "./components/SmartformsDetails";
+import HandyDetails from "./components/HandyDetails";
 import ErrorPage from "./components/ErrorPage";
 import ParticlesBackground from "./components/ParticlesBackground";
+import TurboEventsDetails from "./components/TurboEventsDetails";
+import OmrManagerDetails from "./components/OmrManagerDetails";
 
 function App() {
   return (
@@ -63,6 +66,30 @@ function App() {
               element={
                 <>
                   <SmartFormsDetails /> <ScrollToTopButton />
+                </>
+              }
+            />
+            <Route
+              path="/projects/handy"
+              element={
+                <>
+                  <HandyDetails /> <ScrollToTopButton />
+                </>
+              }
+            />
+            <Route
+              path="/projects/turboevents"
+              element={
+                <>
+                  <TurboEventsDetails /> <ScrollToTopButton />
+                </>
+              }
+            />
+            <Route
+              path="/projects/omr-manager"
+              element={
+                <>
+                  <OmrManagerDetails /> <ScrollToTopButton />
                 </>
               }
             />

@@ -36,10 +36,8 @@ export default function AnilookupDetails() {
       </a>
       <h3>Description</h3>
       <p>
-        AniLookup is an Anime (Japanese film / television animation) and Manga
-        (Japanese comic books and graphic novels) lookup React Web Application
-        made as a passion / learning project. It makes use of various API
-        technologies such as{" "}
+        AniLookup is an Anime and Manga lookup React Web Application made as a
+        passion project. It makes use of various API technologies such as{" "}
         <a href="https://jikan.moe" target="_blank" rel="noreferrer">
           Jikan V4
         </a>
@@ -77,10 +75,7 @@ export default function AnilookupDetails() {
       </p>
       <h3>Features</h3>
       <ul>
-        <li>
-          Responsive UI / design. Works well on all resolutions and screen
-          sizes.
-        </li>
+        <li>Responsive UI / design</li>
         <li>Anime trailers</li>
         <li>External Links (for streaming sites and MyAnimeList official)</li>
         <li>

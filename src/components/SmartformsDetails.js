@@ -43,8 +43,7 @@ export default function SmartFormsDetails() {
       </p>
       <h3>Features</h3>
       <ul>
-        <li>User registration and management</li>
-        <li>User roles</li>
+        <li>Role based user authentication and management</li>
         <li>Single Sign-On via Authentik</li>
         <li>Client registration and management</li>
         <li>Email notifications and status updates</li>
@@ -54,7 +53,7 @@ export default function SmartFormsDetails() {
         <li>
           Company Vehicle Rental system with vehicle availability / status
         </li>
-        <li>External Merchant contract applications</li>
+        <li>External Merchant contracts</li>
         <li>Payment Tracker</li>
         <li>PDF viewer via ViewerJS</li>
       </ul>

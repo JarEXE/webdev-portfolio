@@ -44,13 +44,13 @@ export default function SmartFormsDetails() {
         page size, and enable or disable various features.
         <br></br>
         <br></br>
-        In addition to various graphs and charts for sales statistics and, the
+        In addition to various graphs and charts for sales statistics, the
         management portal would also give notifications regarding potentially
         failed print jobs, allowing the admin to attempt a reprint or
         troubleshoot the issue.
       </p>
       <p>
-        <strong>Demo: </strong>
+        <strong>Site: </strong>
         <a
           href="https://cloud.smartsecureweb.online/printanywhere"
           target="_blank"

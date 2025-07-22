@@ -48,16 +48,15 @@ const About = ({ id, className }) => {
             applications.
             <br></br>
             <br></br>
-            When not busy typing code, I am most likely partaking in some sort
-            of gym activity, game dev practice, keeping up with latest tech
-            trends or tech news, or watching lengthy video essays about video
-            games I will probably never play.
-            <br></br>
-            <br></br>
             My main tech stack is the MERN stack, though I also have experience
-            working with PHP, Java (Android Studio), and C. I am a fast learner
-            who is capable of easily adapting to new environments, languages,
-            and I'm always up for a good challenge.
+            working with Wordpress, PHP, Java, and C. I am a fast learner who is
+            capable of easily adapting to new environments, languages, and I'm
+            always up for a good challenge.
+            <br></br>
+            <br></br>
+            When not busy typing code, I am most likely partaking in some sort
+            of gym activity, PC building, game dev practice, or keeping up with
+            latest tech trends or tech news.
             <br></br>
             <br></br>
             Thanks for checking out my portfolio!

@@ -4,6 +4,9 @@ import smartformsleavecalendar from "../images/smartformsleavecalendar.png";
 import anilookupdevices from "../images/devices-removebg.png";
 import gamewarpdevices from "../images/gamewarpdevices-removebg.png";
 import printanywheredevices from "../images/printanywhere/printanywheredevices.png";
+import handy from "../images/handy/handy-dashboard.png";
+import turboEventsEvent from "../images/turboevents/turbo-events-event.png";
+import omrexam from "../images/omrmanager/omrexam.png";
 
 const Projects = ({ id, className }) => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -40,8 +43,33 @@ const Projects = ({ id, className }) => {
         <ProjectCard
           projectName={"// Print-Anywhere"}
           image={printanywheredevices}
-          tech={["Sveltekit", "Tailwind CSS", "SQL", "Node JS"]}
+          tech={["Svelte", "Sveltekit", "Tailwind CSS", "SQL", "Node JS"]}
           navRoute="/projects/print-anywhere"
+        />
+        <ProjectCard
+          projectName={"// OMR-Manager"}
+          image={omrexam}
+          tech={[
+            "Svelte",
+            "Sveltekit",
+            "Tailwind CSS",
+            "SQL",
+            "Node JS",
+            "OMRChecker",
+          ]}
+          navRoute="/projects/omr-manager"
+        />
+        <ProjectCard
+          projectName={"// TurboEvents"}
+          image={turboEventsEvent}
+          tech={["Svelte", "Sveltekit", "Bootstrap", "SQL", "Node JS"]}
+          navRoute="/projects/turboevents"
+        />
+        <ProjectCard
+          projectName={"// Handy Invoicing System"}
+          image={handy}
+          tech={["Handlebars", "Bootstrap", "Node JS", "Express", "SQL"]}
+          navRoute="/projects/handy"
         />
         <ProjectCard
           projectName="// AniLookup"

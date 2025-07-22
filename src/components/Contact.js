@@ -77,6 +77,9 @@ const Contact = ({ id, className }) => {
           <div>
             {/* eslint-disable-next-line */}
             <h2 className="contact-header">// Contact</h2>
+            <div className="text-center mb-2">
+              <strong>Mobile:</strong> +597 875-9643
+            </div>
             <form className="section5-form" ref={form} onSubmit={handleSubmit}>
               <div className="input-container">
                 <input

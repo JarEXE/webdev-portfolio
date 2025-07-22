@@ -1,12 +1,11 @@
 import React from "react";
-import nier from "../images/nier.gif";
-import breadandfred from "../images/breadandfred.gif";
 import coding from "../images/coding.gif";
-import gym from "../images/gym.gif";
+import terminal from "../images/coding-terminal.gif";
+import gaming from "../images/playstation.gif";
 
 const ImageSlider = () => {
   const [currentImage, setCurrentImage] = React.useState(0);
-  const images = [coding, gym, nier, breadandfred];
+  const images = [terminal, coding, gaming];
 
   React.useEffect(() => {
     const interval = setInterval(() => {

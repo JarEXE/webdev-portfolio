@@ -1,23 +1,10 @@
 import React from "react";
 import sql from "../images/sql.svg";
+import svelte from "../images/svelte.svg";
 import jeyken from "../images/jeyken.jpg";
 import { Link } from "react-scroll";
 
 const Home = ({ id, className }) => {
-  React.useEffect(() => {
-    const wavyElements = document.querySelectorAll(".tech-icons > p");
-
-    const applyWavyClassWithDelay = (index) => {
-      setTimeout(() => {
-        wavyElements[index].classList.add("wavy");
-      }, index * 60);
-    };
-
-    for (let i = 0; i < wavyElements.length; i++) {
-      applyWavyClassWithDelay(i);
-    }
-  }, []);
-
   return (
     <section id={id} className={className} style={{ position: "relative" }}>
       <div className="row-class">
@@ -56,37 +43,52 @@ const Home = ({ id, className }) => {
           >
             <img src={jeyken} alt="artwork of myself" width={200} />
           </div>
-          <div className="tech-icons">
+
+          <div className="tech-icons mb-2">
             <p>
               <i
-                className="fa-brands fa-html5"
+                className="fa-brands fa-html5 icon-html"
                 style={{ color: "#E96228" }}
               ></i>
             </p>
             <p>
-              <i className="fa-brands fa-js" style={{ color: "#E8D44D" }}></i>
+              <i
+                className="fa-brands fa-js icon-js"
+                style={{ color: "#E8D44D" }}
+              ></i>
             </p>
             <p>
               <i
-                className="fa-brands fa-css3-alt"
+                className="fa-brands fa-css3-alt icon-css"
                 style={{ color: "#2194F0" }}
               ></i>
             </p>
             <p>
               <i
-                className="fa-brands fa-react"
+                className="fa-brands fa-react icon-react"
                 style={{ color: "#5ED3F3" }}
               ></i>
             </p>
+          </div>
+
+          <div className="tech-icons">
             <p>
-              <i className="fa-brands fa-node" style={{ color: "#88C249" }}></i>
+              <img src={svelte} alt="svelte-logo" className="icon-svelte" />
             </p>
             <p>
-              <img
-                src={sql}
-                alt="sql-logo"
-                style={{ width: "60px", height: "32px", marginLeft: "-10px" }}
-              />
+              <img src={sql} alt="sql-logo" className="icon-sql" />
+            </p>
+            <p>
+              <i
+                className="fa-brands fa-node icon-node"
+                style={{ color: "#88C249" }}
+              ></i>
+            </p>
+            <p>
+              <i
+                className="fa-brands fa-wordpress icon-wp"
+                style={{ color: "#23282d" }}
+              ></i>
             </p>
           </div>
         </div>
